@@ -3,8 +3,8 @@
     <v-app>
      <v-content>
        <v-container>
-         <h1>Мир вокруг</h1>
-         социальная сеть для путешественников
+         <div class="display-3">мир вокруг</div>
+         <div class="title">социальная сеть для путешественников</div>
        </v-container>
      </v-content>
    </v-app>

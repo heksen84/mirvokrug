@@ -32763,8 +32763,11 @@ var render = function() {
             "v-content",
             [
               _c("v-container", [
-                _c("h1", [_vm._v("Мир вокруг")]),
-                _vm._v("\n       социальная сеть для путешественников\n     ")
+                _c("div", { staticClass: "display-3" }, [_vm._v("мир вокруг")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "title" }, [
+                  _vm._v("социальная сеть для путешественников")
+                ])
               ])
             ],
             1
