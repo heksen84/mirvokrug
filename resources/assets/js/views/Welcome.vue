@@ -33,7 +33,6 @@ export default {
 			}
 	},
 created() {
-  alert("welcome");
 },
   methods: {
 }
