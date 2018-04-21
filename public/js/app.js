@@ -1700,6 +1700,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32769,17 +32785,71 @@ var render = function() {
               _c(
                 "v-container",
                 [
-                  _c("v-btn", { attrs: { color: "success" } }, [
-                    _vm._v("Success")
-                  ]),
-                  _vm._v(" "),
-                  _c("v-btn", { attrs: { color: "error" } }, [_vm._v("Error")]),
-                  _vm._v(" "),
-                  _c("v-btn", { attrs: { color: "warning" } }, [
-                    _vm._v("Warning")
-                  ]),
-                  _vm._v(" "),
-                  _c("v-btn", { attrs: { color: "info" } }, [_vm._v("Info")])
+                  _c(
+                    "v-layout",
+                    [
+                      _c(
+                        "v-flex",
+                        { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                        [
+                          _c(
+                            "v-card",
+                            [
+                              _c("v-card-media", {
+                                attrs: {
+                                  src: "/static/doc-images/cards/desert.jpg",
+                                  height: "200px"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-title",
+                                { attrs: { "primary-title": "" } },
+                                [
+                                  _c("div", [
+                                    _c("h3", { staticClass: "headline mb-0" }, [
+                                      _vm._v("Kangaroo Valley Safari")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", [
+                                      _vm._v(
+                                        "Located two hours south of Sydney in the "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(
+                                        "Southern Highlands of New South Wales, ..."
+                                      )
+                                    ])
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-actions",
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { flat: "", color: "orange" } },
+                                    [_vm._v("Share")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { flat: "", color: "orange" } },
+                                    [_vm._v("Explore")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
                 ],
                 1
               )
