@@ -1,13 +1,16 @@
 require('./bootstrap');
 
-import vue from 'vue'
-import vuetify from 'vuetify'
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+
+Vue.use(Vuetify);
+
 import welcome from './views/welcome.vue'
 import home from './views/home.vue'
 import profile from './views/profile.vue'
 import newtrip from './views/newtrip.vue'
 
-Vue.use(vuetify);
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 
 const app = new Vue({
     el: '#app',

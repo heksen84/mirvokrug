@@ -6,6 +6,9 @@ export default {
     return 	{
 			}
 	},
+	created() {
+	  alert("home");
+	},
 components: { },
   methods: {
     hello() {

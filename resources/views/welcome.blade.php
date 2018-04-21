@@ -10,15 +10,16 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>МИР ВОКРУГ - онлайн-сервис для путешественников</title>
 <link rel="icon" href="{{ asset('./voice.ico') }}">
-<link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+<!--<link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">-->
 </head>
 <body>
 <div id="app">
-    @if (Auth::guest())
+    <!--@if (Auth::guest())
       <welcome :auth="false"></welcome>
     @else
       <welcome :auth="true"></welcome>
-    @endif
+    @endif-->
+      <welcome></welcome>
 </div>
 <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 </body>
