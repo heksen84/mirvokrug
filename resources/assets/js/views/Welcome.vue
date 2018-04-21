@@ -6,7 +6,7 @@
          <v-layout row wrap>
            <v-flex md8>
              <div class="display-3">мир вокруг</div>
-             <div class="title">социальная сеть для путешественников</div>
+             <div class="subheading">социальная сеть для путешественников</div>
            </v-flex>
            <v-flex md4 text-md-center>
              <v-form v-model="valid">

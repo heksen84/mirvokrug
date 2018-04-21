@@ -32808,7 +32808,7 @@ var render = function() {
                           _vm._v("мир вокруг")
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "title" }, [
+                        _c("div", { staticClass: "subheading" }, [
                           _vm._v("социальная сеть для путешественников")
                         ])
                       ]),
