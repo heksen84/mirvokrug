@@ -9,7 +9,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>МИР ВОКРУГ - онлайн-сервис для путешественников</title>
-	      <link rel="icon" href="{{ asset('./voice.ico') }}">
+	      <link rel="icon" href="{{ asset('public/globe.ico') }}">
     </head>
     <body>
 <div id="app">
