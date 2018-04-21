@@ -1698,6 +1698,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -32762,13 +32769,33 @@ var render = function() {
           _c(
             "v-content",
             [
-              _c("v-container", [
-                _c("div", { staticClass: "display-3" }, [_vm._v("мир вокруг")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "title" }, [
-                  _vm._v("социальная сеть для путешественников")
-                ])
-              ])
+              _c(
+                "v-container",
+                { attrs: { "grid-list-md": "" } },
+                [
+                  _c(
+                    "v-layout",
+                    { attrs: { row: "", wrap: "" } },
+                    [
+                      _c("v-flex", { attrs: { md6: "" } }, [
+                        _c("div", { staticClass: "display-3" }, [
+                          _vm._v("мир вокруг")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "title" }, [
+                          _vm._v("социальная сеть для путешественников")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("v-flex", { attrs: { md6: "" } }, [
+                        _vm._v("\n           Вход\n         ")
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
             ],
             1
           )
