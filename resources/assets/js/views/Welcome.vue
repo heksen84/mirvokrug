@@ -4,11 +4,11 @@
      <v-content>
        <v-container grid-list-md>
          <v-layout row wrap>
-           <v-flex md6>
+           <v-flex md8>
              <div class="display-3">мир вокруг</div>
              <div class="title">социальная сеть для путешественников</div>
            </v-flex>
-           <v-flex md6 text-md-center>
+           <v-flex md4 text-md-center>
              <v-form v-model="valid">
                 <v-text-field
                   label="Name"

@@ -32803,7 +32803,7 @@ var render = function() {
                     "v-layout",
                     { attrs: { row: "", wrap: "" } },
                     [
-                      _c("v-flex", { attrs: { md6: "" } }, [
+                      _c("v-flex", { attrs: { md8: "" } }, [
                         _c("div", { staticClass: "display-3" }, [
                           _vm._v("мир вокруг")
                         ]),
@@ -32815,7 +32815,7 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "v-flex",
-                        { attrs: { md6: "", "text-md-center": "" } },
+                        { attrs: { md4: "", "text-md-center": "" } },
                         [
                           _c(
                             "v-form",
