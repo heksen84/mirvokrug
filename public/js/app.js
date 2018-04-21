@@ -1714,8 +1714,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32795,13 +32793,6 @@ var render = function() {
                           _c(
                             "v-card",
                             [
-                              _c("v-card-media", {
-                                attrs: {
-                                  src: "/static/doc-images/cards/desert.jpg",
-                                  height: "200px"
-                                }
-                              }),
-                              _vm._v(" "),
                               _c(
                                 "v-card-title",
                                 { attrs: { "primary-title": "" } },
