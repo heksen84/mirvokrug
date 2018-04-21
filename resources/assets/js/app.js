@@ -1,17 +1,13 @@
 require('./bootstrap');
 
-import Vue from 'vue'
-import Vuetify from 'vuetify'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import vue from 'vue'
+import vuetify from 'vuetify'
 import welcome from './views/welcome.vue'
 import home from './views/home.vue'
 import profile from './views/profile.vue'
 import newtrip from './views/newtrip.vue'
 
-Vue.use(Vuetify);
-Vue.use(BootstrapVue);
+Vue.use(vuetify);
 
 const app = new Vue({
     el: '#app',
