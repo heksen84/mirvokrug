@@ -32,8 +32,13 @@
                   :rules="emailRules"
                   required
                 ></v-text-field>
+                <div>
+                <a href="javascript:;" @click.stop="terms = true">Регистрация</a>
+                </div>
+                <br>
+                <v-btn @click="submit">войти</v-btn>
               </v-form>
-              <v-btn @click="submit">войти</v-btn>
+
            </v-flex>
          </v-layout>
        </v-container>
@@ -54,7 +59,8 @@
       emailRules: [
         v => !!v || 'Введите e-mail',
         v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-      ]
+      ],
+      checkbox: false
     })
   }
 </script>

@@ -1729,6 +1729,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1746,7 +1751,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }, function (v) {
         return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         );
-      }]
+      }],
+      checkbox: false
     };
   }
 });
@@ -32910,14 +32916,32 @@ var render = function() {
                                   },
                                   expression: "email"
                                 }
-                              })
+                              }),
+                              _vm._v(" "),
+                              _c("div", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: { href: "javascript:;" },
+                                    on: {
+                                      click: function($event) {
+                                        $event.stopPropagation()
+                                        _vm.terms = true
+                                      }
+                                    }
+                                  },
+                                  [_vm._v("Регистрация")]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("v-btn", { on: { click: _vm.submit } }, [
+                                _vm._v("войти")
+                              ])
                             ],
                             1
-                          ),
-                          _vm._v(" "),
-                          _c("v-btn", { on: { click: _vm.submit } }, [
-                            _vm._v("войти")
-                          ])
+                          )
                         ],
                         1
                       )
