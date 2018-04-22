@@ -14,7 +14,12 @@
 </head>
 <body>
 <div id="app">
-      <passwordreset></passwordreset>
+    <!--@if (Auth::guest())
+      <welcome :auth="false"></welcome>
+    @else
+      <welcome :auth="true"></welcome>
+    @endif-->
+      <welcome></welcome>
 </div>
 <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 </body>
