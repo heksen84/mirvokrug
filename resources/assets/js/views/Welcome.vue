@@ -48,11 +48,10 @@
                   :rules="emailRules"
                   required
                 ></v-text-field>
-                <div>
-                <a href="javascript:;" @click.stop="terms = true">Регистрация</a>
-                </div>
-                <br>
                 <v-btn @click="submit">войти</v-btn>
+                <br>
+                <br>
+                <div><a href="javascript:;" @click.stop="terms = true">Регистрация</a></div>
               </v-form>
 
            </v-flex>
