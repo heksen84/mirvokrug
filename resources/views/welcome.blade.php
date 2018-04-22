@@ -8,7 +8,7 @@
   <meta name="description" content="get free numbers">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>МИР ВОКРУГ - онлайн-сервис для путешественников</title>
+  <title>Мир на ладонях - онлайн-сервис для путешественников</title>
   <link rel="icon" href="{{ asset('public/globe.ico') }}">
 <!--<link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">-->
 </head>
