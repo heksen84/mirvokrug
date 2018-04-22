@@ -1743,6 +1743,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32853,10 +32860,52 @@ var render = function() {
                                       attrs: { fluid: "", "grid-list-md": "" }
                                     },
                                     [
-                                      _vm._v(
-                                        "\n               123\n             "
+                                      _c(
+                                        "v-card",
+                                        {
+                                          staticClass: "white--text",
+                                          attrs: {
+                                            color: "cyan darken-2",
+                                            flat: ""
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "v-card-title",
+                                            { attrs: { "primary-title": "" } },
+                                            [
+                                              _c(
+                                                "div",
+                                                { staticClass: "display-2" },
+                                                [_vm._v("мир на ладонях")]
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-card-actions",
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  attrs: { flat: "", dark: "" }
+                                                },
+                                                [
+                                                  _c("div", {}, [
+                                                    _vm._v(
+                                                      "социальная сеть для путешественников"
+                                                    )
+                                                  ])
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
                                       )
-                                    ]
+                                    ],
+                                    1
                                   )
                                 ],
                                 1
@@ -32871,6 +32920,7 @@ var render = function() {
                       _c(
                         "v-flex",
                         {
+                          staticClass: "pa-3",
                           attrs: {
                             xs12: "",
                             sm4: "",
