@@ -32978,7 +32978,7 @@ var render = function() {
                                 _c(
                                   "a",
                                   {
-                                    attrs: { href: "javascript:;" },
+                                    attrs: { href: "/password/reset" },
                                     on: {
                                       click: function($event) {
                                         $event.stopPropagation()

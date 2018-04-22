@@ -48,7 +48,7 @@
                   :rules="emailRules"
                   required
                 ></v-text-field>
-                <div><a href="javascript:;" @click.stop="terms = true">Забыли пароль?</a></div>
+                <div><a href="/password/reset" @click.stop="terms = true">Забыли пароль?</a></div>
                 <v-btn @click="submit" class="ma-2">войти</v-btn>
                 <br>
                 <br>
