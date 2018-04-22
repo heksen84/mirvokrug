@@ -9,7 +9,7 @@
 
              <v-card color="cyan darken-2" class="white--text">
               <v-card-title primary-title>
-                 <div class="display-3">мир на ладонях</div>
+                 <div class="display-2">мир на ладонях</div>
               </v-card-title>
               <v-card-actions>
                 <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>

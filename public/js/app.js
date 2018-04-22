@@ -32828,7 +32828,7 @@ var render = function() {
                                 "v-card-title",
                                 { attrs: { "primary-title": "" } },
                                 [
-                                  _c("div", { staticClass: "display-3" }, [
+                                  _c("div", { staticClass: "display-2" }, [
                                     _vm._v("мир на ладонях")
                                   ])
                                 ]
