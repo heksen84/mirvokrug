@@ -1751,9 +1751,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }, function (v) {
         return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         );
-      }],
-      checkbox: false
+      }]
     };
+  },
+  methods: {
+    submit: function submit() {}
   }
 });
 
@@ -32871,7 +32873,7 @@ var render = function() {
                             md4: "",
                             dark: "",
                             color: "primary",
-                            "text-xs-center": ""
+                            "text-md-center": ""
                           }
                         },
                         [

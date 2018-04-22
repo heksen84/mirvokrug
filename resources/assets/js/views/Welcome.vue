@@ -4,9 +4,9 @@
      <v-content>
        <v-container grid-list-md fluid>
          <v-layout row wrap>
+
+
            <v-flex md8>
-
-
              <v-card color="cyan darken-2" class="white--text">
               <v-card-title primary-title>
                  <div class="display-2">мир на ладонях</div>
@@ -15,9 +15,9 @@
                 <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>
               </v-card-actions>
             </v-card>
-
            </v-flex>
-           <v-flex md4 dark color="primary" text-xs-center>
+
+           <v-flex md4 dark color="primary" text-md-center>
              <v-form v-model="valid">
                 <v-text-field
                   label="Имя"
@@ -59,8 +59,11 @@
       emailRules: [
         v => !!v || 'Введите e-mail',
         v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-      ],
-      checkbox: false
-    })
+      ]
+    }),
+    methods: {
+      submit () {
+      }
+    }
   }
 </script>
