@@ -15,5 +15,12 @@ Vue.use(Vuetify);
 
 const app = new Vue({
     el: '#app',
-    components: { welcome, profile, home, newtrip, passwordreset, login, register }
+    components: { 
+      welcome,
+      profile,
+      home,
+      newtrip,
+      passwordreset,
+      login,
+      register }
 });

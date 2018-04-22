@@ -61870,8 +61870,15 @@ __webpack_require__("./resources/assets/js/bootstrap.js");
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuetify___default.a);
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: '#app',
-    components: { welcome: __WEBPACK_IMPORTED_MODULE_2__views_welcome_vue___default.a, profile: __WEBPACK_IMPORTED_MODULE_4__views_profile_vue___default.a, home: __WEBPACK_IMPORTED_MODULE_3__views_home_vue___default.a, newtrip: __WEBPACK_IMPORTED_MODULE_5__views_newtrip_vue___default.a, passwordreset: __WEBPACK_IMPORTED_MODULE_6__views_auth_passwordreset_vue___default.a, login: __WEBPACK_IMPORTED_MODULE_7__views_auth_login_vue___default.a, register: __WEBPACK_IMPORTED_MODULE_8__views_auth_register_vue___default.a }
+  el: '#app',
+  components: {
+    welcome: __WEBPACK_IMPORTED_MODULE_2__views_welcome_vue___default.a,
+    profile: __WEBPACK_IMPORTED_MODULE_4__views_profile_vue___default.a,
+    home: __WEBPACK_IMPORTED_MODULE_3__views_home_vue___default.a,
+    newtrip: __WEBPACK_IMPORTED_MODULE_5__views_newtrip_vue___default.a,
+    passwordreset: __WEBPACK_IMPORTED_MODULE_6__views_auth_passwordreset_vue___default.a,
+    login: __WEBPACK_IMPORTED_MODULE_7__views_auth_login_vue___default.a,
+    register: __WEBPACK_IMPORTED_MODULE_8__views_auth_register_vue___default.a }
 });
 
 /***/ }),
