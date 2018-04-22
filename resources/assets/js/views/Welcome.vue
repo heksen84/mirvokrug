@@ -2,13 +2,22 @@
   <div>
     <v-app>
      <v-content>
-       <v-container grid-list-md>
+       <v-container grid-list-md fluid>
          <v-layout row wrap>
            <v-flex md8>
-             <div class="display-3">мир вокруг</div>
-             <div class="subheading">социальная сеть для путешественников</div>
+
+
+             <v-card color="cyan darken-2" class="white--text">
+              <v-card-title primary-title>
+                 <div class="display-3">мир на ладонях</div>
+              </v-card-title>
+              <v-card-actions>
+                <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>
+              </v-card-actions>
+            </v-card>
+
            </v-flex>
-           <v-flex md4 text-md-center>
+           <v-flex md4 text-md-center dark color="primary">
              <v-form v-model="valid">
                 <v-text-field
                   label="Name"

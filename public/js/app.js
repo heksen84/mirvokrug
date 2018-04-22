@@ -1719,6 +1719,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32797,25 +32806,67 @@ var render = function() {
             [
               _c(
                 "v-container",
-                { attrs: { "grid-list-md": "" } },
+                { attrs: { "grid-list-md": "", fluid: "" } },
                 [
                   _c(
                     "v-layout",
                     { attrs: { row: "", wrap: "" } },
                     [
-                      _c("v-flex", { attrs: { md8: "" } }, [
-                        _c("div", { staticClass: "display-3" }, [
-                          _vm._v("мир вокруг")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "subheading" }, [
-                          _vm._v("социальная сеть для путешественников")
-                        ])
-                      ]),
+                      _c(
+                        "v-flex",
+                        { attrs: { md8: "" } },
+                        [
+                          _c(
+                            "v-card",
+                            {
+                              staticClass: "white--text",
+                              attrs: { color: "cyan darken-2" }
+                            },
+                            [
+                              _c(
+                                "v-card-title",
+                                { attrs: { "primary-title": "" } },
+                                [
+                                  _c("div", { staticClass: "display-3" }, [
+                                    _vm._v("мир на ладонях")
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-actions",
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { flat: "", dark: "" } },
+                                    [
+                                      _c("div", {}, [
+                                        _vm._v(
+                                          "социальная сеть для путешественников"
+                                        )
+                                      ])
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c(
                         "v-flex",
-                        { attrs: { md4: "", "text-md-center": "" } },
+                        {
+                          attrs: {
+                            md4: "",
+                            "text-md-center": "",
+                            dark: "",
+                            color: "primary"
+                          }
+                        },
                         [
                           _c(
                             "v-form",
