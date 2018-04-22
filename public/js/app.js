@@ -1749,6 +1749,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32972,14 +32974,6 @@ var render = function() {
                                 }
                               }),
                               _vm._v(" "),
-                              _c("v-btn", { on: { click: _vm.submit } }, [
-                                _vm._v("войти")
-                              ]),
-                              _vm._v(" "),
-                              _c("br"),
-                              _vm._v(" "),
-                              _c("br"),
-                              _vm._v(" "),
                               _c("div", [
                                 _c(
                                   "a",
@@ -32992,9 +32986,31 @@ var render = function() {
                                       }
                                     }
                                   },
-                                  [_vm._v("Регистрация")]
+                                  [_vm._v("Забыли пароль?")]
                                 )
-                              ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "ma-3",
+                                  on: { click: _vm.submit }
+                                },
+                                [_vm._v("войти")]
+                              ),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: { color: "success" },
+                                  on: { click: _vm.submit }
+                                },
+                                [_vm._v("Регистрация")]
+                              )
                             ],
                             1
                           )
