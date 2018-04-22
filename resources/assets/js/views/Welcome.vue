@@ -39,7 +39,7 @@
                   label="Имя"
                   v-model="name"
                   :rules="nameRules"
-                  :counter="10"
+                  :counter="15"
                   required
                 ></v-text-field>
                 <v-text-field
@@ -70,7 +70,7 @@
       name: '',
       nameRules: [
         v => !!v || 'Введите имя',
-        v => v.length <= 10 || 'Name must be less than 10 characters'
+        v => v.length <= 15 || 'Name must be less than 15 characters'
       ],
       email: '',
       emailRules: [

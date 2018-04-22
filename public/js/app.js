@@ -1760,7 +1760,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       nameRules: [function (v) {
         return !!v || 'Введите имя';
       }, function (v) {
-        return v.length <= 10 || 'Name must be less than 10 characters';
+        return v.length <= 15 || 'Name must be less than 15 characters';
       }],
       email: '',
       emailRules: [function (v) {
@@ -32947,7 +32947,7 @@ var render = function() {
                                 attrs: {
                                   label: "Имя",
                                   rules: _vm.nameRules,
-                                  counter: 10,
+                                  counter: 15,
                                   required: ""
                                 },
                                 model: {
