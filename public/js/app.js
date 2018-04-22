@@ -32921,7 +32921,7 @@ var render = function() {
                       _c(
                         "v-flex",
                         {
-                          staticClass: "pa-3",
+                          staticClass: "pa-4",
                           attrs: {
                             xs12: "",
                             sm4: "",
@@ -32993,7 +32993,7 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  staticClass: "ma-3",
+                                  staticClass: "ma-2",
                                   on: { click: _vm.submit }
                                 },
                                 [_vm._v("войти")]

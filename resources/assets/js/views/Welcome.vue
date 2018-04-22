@@ -33,7 +33,7 @@
             </v-card>
           </v-flex>-->
 
-           <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-3">
+           <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
                 <v-text-field
                   label="Имя"
@@ -49,7 +49,7 @@
                   required
                 ></v-text-field>
                 <div><a href="javascript:;" @click.stop="terms = true">Забыли пароль?</a></div>
-                <v-btn @click="submit" class="ma-3">войти</v-btn>
+                <v-btn @click="submit" class="ma-2">войти</v-btn>
                 <br>
                 <br>
                 <!--<div><a href="javascript:;" @click.stop="terms = true">Регистрация</a></div>-->
