@@ -6,8 +6,8 @@
          <v-layout row wrap>
 
            <v-flex xs12 sm8>
-             <v-card>
-               <v-card-media src="images/screen1.jpg" height="600px">
+             <v-card flat>
+               <v-card-media src="images/logo2.jpg" height="650px">
                <v-container fluid grid-list-md>
                  123
                </v-container>

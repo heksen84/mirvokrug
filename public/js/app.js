@@ -32836,13 +32836,14 @@ var render = function() {
                         [
                           _c(
                             "v-card",
+                            { attrs: { flat: "" } },
                             [
                               _c(
                                 "v-card-media",
                                 {
                                   attrs: {
-                                    src: "images/screen1.jpg",
-                                    height: "600px"
+                                    src: "images/logo2.jpg",
+                                    height: "650px"
                                   }
                                 },
                                 [
