@@ -17,11 +17,10 @@
             </v-card>
 
            </v-flex>
-           <v-flex md4 dark color="primary">
-             <div class="title">вход</div>
+           <v-flex md4 dark color="primary" text-xs-center>
              <v-form v-model="valid">
                 <v-text-field
-                  label="Name"
+                  label="Имя"
                   v-model="name"
                   :rules="nameRules"
                   :counter="10"
@@ -34,6 +33,7 @@
                   required
                 ></v-text-field>
               </v-form>
+              <v-btn @click="submit">войти</v-btn>
            </v-flex>
          </v-layout>
        </v-container>

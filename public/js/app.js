@@ -32860,10 +32860,15 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "v-flex",
-                        { attrs: { md4: "", dark: "", color: "primary" } },
+                        {
+                          attrs: {
+                            md4: "",
+                            dark: "",
+                            color: "primary",
+                            "text-xs-center": ""
+                          }
+                        },
                         [
-                          _c("div", { staticClass: "title" }, [_vm._v("вход")]),
-                          _vm._v(" "),
                           _c(
                             "v-form",
                             {
@@ -32878,7 +32883,7 @@ var render = function() {
                             [
                               _c("v-text-field", {
                                 attrs: {
-                                  label: "Name",
+                                  label: "Имя",
                                   rules: _vm.nameRules,
                                   counter: 10,
                                   required: ""
@@ -32908,7 +32913,11 @@ var render = function() {
                               })
                             ],
                             1
-                          )
+                          ),
+                          _vm._v(" "),
+                          _c("v-btn", { on: { click: _vm.submit } }, [
+                            _vm._v("войти")
+                          ])
                         ],
                         1
                       )
