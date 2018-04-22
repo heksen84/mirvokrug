@@ -17,7 +17,8 @@
             </v-card>
 
            </v-flex>
-           <v-flex md4 text-md-center dark color="primary">
+           <v-flex md4 dark color="primary">
+             <div class="title">вход</div>
              <v-form v-model="valid">
                 <v-text-field
                   label="Name"
