@@ -1736,13 +1736,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       valid: false,
       name: '',
       nameRules: [function (v) {
-        return !!v || 'Name is required';
+        return !!v || 'Введите имя';
       }, function (v) {
         return v.length <= 10 || 'Name must be less than 10 characters';
       }],
       email: '',
       emailRules: [function (v) {
-        return !!v || 'E-mail is required';
+        return !!v || 'Введите e-mail';
       }, function (v) {
         return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         );
