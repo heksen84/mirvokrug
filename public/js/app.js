@@ -1734,6 +1734,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -32823,37 +32832,29 @@ var render = function() {
                     [
                       _c(
                         "v-flex",
-                        { attrs: { md8: "" } },
+                        { attrs: { xs12: "", sm8: "" } },
                         [
                           _c(
                             "v-card",
-                            {
-                              staticClass: "white--text",
-                              attrs: { color: "cyan darken-2" }
-                            },
                             [
                               _c(
-                                "v-card-title",
-                                { attrs: { "primary-title": "" } },
-                                [
-                                  _c("div", { staticClass: "display-2" }, [
-                                    _vm._v("мир на ладонях")
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-card-actions",
+                                "v-card-media",
+                                {
+                                  attrs: {
+                                    src: "images/screen1.jpg",
+                                    height: "600px"
+                                  }
+                                },
                                 [
                                   _c(
-                                    "v-btn",
-                                    { attrs: { flat: "", dark: "" } },
+                                    "v-container",
+                                    {
+                                      attrs: { fluid: "", "grid-list-md": "" }
+                                    },
                                     [
-                                      _c("div", {}, [
-                                        _vm._v(
-                                          "социальная сеть для путешественников"
-                                        )
-                                      ])
+                                      _vm._v(
+                                        "\n               123\n             "
+                                      )
                                     ]
                                   )
                                 ],
@@ -32870,7 +32871,8 @@ var render = function() {
                         "v-flex",
                         {
                           attrs: {
-                            md4: "",
+                            xs12: "",
+                            sm4: "",
                             dark: "",
                             color: "primary",
                             "text-md-center": ""

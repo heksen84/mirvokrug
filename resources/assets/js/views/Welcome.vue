@@ -5,9 +5,18 @@
        <v-container grid-list-md fluid>
          <v-layout row wrap>
 
+           <v-flex xs12 sm8>
+             <v-card>
+               <v-card-media src="images/screen1.jpg" height="600px">
+               <v-container fluid grid-list-md>
+                 123
+               </v-container>
+               </v-card-media>
+             </v-card>
+           </v-flex>
 
-           <v-flex md8>
-             <v-card color="cyan darken-2" class="white--text">
+           <!--<v-flex md8>
+             <v-card color="cyan darken-2" class="white--text" width="auto">
               <v-card-title primary-title>
                  <div class="display-2">мир на ладонях</div>
               </v-card-title>
@@ -15,9 +24,9 @@
                 <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>
               </v-card-actions>
             </v-card>
-           </v-flex>
+          </v-flex>-->
 
-           <v-flex md4 dark color="primary" text-md-center>
+           <v-flex xs12 sm4 dark color="primary" text-md-center>
              <v-form v-model="valid">
                 <v-text-field
                   label="Имя"
