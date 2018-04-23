@@ -22,17 +22,6 @@
              </v-card>
            </v-flex>
 
-           <!--<v-flex md8>
-             <v-card color="cyan darken-2" class="white--text" width="auto">
-              <v-card-title primary-title>
-                 <div class="display-2">мир на ладонях</div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>-->
-
            <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
                 <v-text-field
