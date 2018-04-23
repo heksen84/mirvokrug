@@ -15,7 +15,9 @@ Vue.use(Vuetify);
 
 const app = new Vue({
     el: '#app',
-    components: { 
+    data: () => ({
+    }),
+    components: {
       welcome,
       profile,
       home,

@@ -62074,6 +62074,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuet
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app',
+  data: function data() {
+    return {};
+  },
   components: {
     welcome: __WEBPACK_IMPORTED_MODULE_2__views_welcome_vue___default.a,
     profile: __WEBPACK_IMPORTED_MODULE_4__views_profile_vue___default.a,
