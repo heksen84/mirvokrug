@@ -33121,15 +33121,7 @@ var render = function() {
                               _c("div", [
                                 _c(
                                   "a",
-                                  {
-                                    attrs: { href: "/password/reset" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.stopPropagation()
-                                        _vm.terms = true
-                                      }
-                                    }
-                                  },
+                                  { attrs: { href: "/password/reset" } },
                                   [_vm._v("Забыли пароль?")]
                                 )
                               ]),
@@ -33137,7 +33129,7 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  staticClass: "ma-2",
+                                  staticClass: "ma-3",
                                   on: { click: _vm.submit }
                                 },
                                 [_vm._v("войти")]
@@ -33150,8 +33142,7 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  attrs: { color: "success" },
-                                  on: { click: _vm.submit }
+                                  attrs: { color: "success", href: "/register" }
                                 },
                                 [_vm._v("Регистрация")]
                               )

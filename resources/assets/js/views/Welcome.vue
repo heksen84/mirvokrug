@@ -48,12 +48,12 @@
                   :rules="emailRules"
                   required
                 ></v-text-field>
-                <div><a href="/password/reset" @click.stop="terms = true">Забыли пароль?</a></div>
-                <v-btn @click="submit" class="ma-2">войти</v-btn>
+                <div><a href="/password/reset">Забыли пароль?</a></div>
+                <v-btn @click="submit" class="ma-3">войти</v-btn>
                 <br>
                 <br>
                 <!--<div><a href="javascript:;" @click.stop="terms = true">Регистрация</a></div>-->
-                <v-btn color="success" @click="submit">Регистрация</v-btn>
+                <v-btn color="success" href="/register">Регистрация</v-btn>
               </v-form>
 
            </v-flex>
