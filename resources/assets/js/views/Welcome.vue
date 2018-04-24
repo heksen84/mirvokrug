@@ -7,7 +7,7 @@
 
            <v-flex xs12 sm8>
              <v-card flat>
-               <v-card-media src="images/logo5.jpg" height="650px">
+               <v-card-media src="images/logo6.jpg" height="650px">
                <v-container fluid grid-list-md>
                  <!--<v-card color="cyan darken-2" class="white--text" flat>
                   <v-card-title primary-title>
@@ -35,17 +35,17 @@
 
                 <!-- ПАРОЛЬ -->
                 <v-text-field
-          name="input-10-1"
-          label="Пароль"
-          hint="Не менее 8 символов"
-          v-model="password"
-          min="8"
-          :append-icon="e1 ? 'visibility' : 'visibility_off'"
-          :append-icon-cb="() => (e1 = !e1)"
-          :type="e1 ? 'password' : 'text'"
-          counter
-          required
-        ></v-text-field>
+                name="input-10-1"
+                label="Пароль"
+                hint="Не менее 8 символов"
+                v-model="password"
+                min="8"
+                :append-icon="e1 ? 'visibility' : 'visibility_off'"
+                :append-icon-cb="() => (e1 = !e1)"
+                :type="e1 ? 'password' : 'text'"
+                counter
+                required></v-text-field>
+
                 <div><a href="/password/reset">Забыли пароль?</a></div>
                 <br>
                 <v-btn @click="submit" class="ma-4">войти</v-btn>

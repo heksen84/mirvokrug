@@ -33071,7 +33071,7 @@ var render = function() {
                                 "v-card-media",
                                 {
                                   attrs: {
-                                    src: "images/logo5.jpg",
+                                    src: "images/logo6.jpg",
                                     height: "650px"
                                   }
                                 },
