@@ -10,6 +10,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
           <title>МИР ВОКРУГ - онлайн-сервис для путешественников</title>
         <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     </head>
     <body>
 <div id="app"></div>

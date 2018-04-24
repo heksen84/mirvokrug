@@ -11,7 +11,6 @@ import login from './views/auth/login.vue'
 import register from './views/auth/register.vue'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 // index.js or main.js
-import 'material-design-icons-iconfont/dist/material-design-icons.min.css' // Ensure you are using css-loader
 
 Vue.use(Vuetify);
 

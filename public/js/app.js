@@ -62016,7 +62016,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_auth_register_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__views_auth_register_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vuetify_dist_vuetify_min_css__ = __webpack_require__("./node_modules/vuetify/dist/vuetify.min.css");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_vuetify_dist_vuetify_min_css__);
-throw new Error("Cannot find module \"material-design-icons-iconfont/dist/material-design-icons.min.css\"");
 __webpack_require__("./resources/assets/js/bootstrap.js");
 
 
@@ -62030,7 +62029,6 @@ __webpack_require__("./resources/assets/js/bootstrap.js");
 
  // Ensure you are using css-loader
 // index.js or main.js
- // Ensure you are using css-loader
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuetify___default.a);
 
