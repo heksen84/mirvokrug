@@ -46,8 +46,8 @@
           counter
           required
         ></v-text-field>
-
                 <div><a href="/password/reset">Забыли пароль?</a></div>
+                <br>
                 <v-btn @click="submit" class="ma-4">войти</v-btn>
                 <v-btn color="success" href="/register">Регистрация</v-btn>
               </v-form>
