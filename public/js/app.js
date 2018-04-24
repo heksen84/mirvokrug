@@ -1916,8 +1916,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       valid: false,
-      name: '',
-      nameRules: [function (v) {
+      password: '',
+      passwordRules: [function (v) {
         return !!v || 'Введите имя';
       }, function (v) {
         return v.length <= 15 || 'Name must be less than 15 characters';
@@ -1926,7 +1926,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       emailRules: [function (v) {
         return !!v || 'Введите e-mail';
       }, function (v) {
-        return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'Введите корректный E-mail '
         );
       }]
     };
@@ -33124,13 +33124,10 @@ var render = function() {
                               }),
                               _vm._v(" "),
                               _c("v-text-field", {
-                                attrs: { label: "Пароль", required: "" },
-                                model: {
-                                  value: _vm.password,
-                                  callback: function($$v) {
-                                    _vm.password = $$v
-                                  },
-                                  expression: "password"
+                                attrs: {
+                                  label: "Пароль",
+                                  type: _vm.password,
+                                  required: ""
                                 }
                               }),
                               _vm._v(" "),

@@ -32,7 +32,7 @@
                 </v-text-field>
                 <v-text-field
                   label="Пароль"
-                  v-model="password"
+                  :type="password"
                   required>
                 </v-text-field>
                 <div><a href="/password/reset">Забыли пароль?</a></div>
@@ -54,15 +54,15 @@
   export default {
     data: () => ({
       valid: false,
-      name: '',
-      nameRules: [
+      password: '',
+      passwordRules: [
         v => !!v || 'Введите имя',
         v => v.length <= 15 || 'Name must be less than 15 characters'
       ],
       email: '',
       emailRules: [
         v => !!v || 'Введите e-mail',
-        v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'Введите корректный E-mail '
       ]
     }),
     methods: {
