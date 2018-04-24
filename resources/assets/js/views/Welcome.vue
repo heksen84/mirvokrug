@@ -7,16 +7,16 @@
 
            <v-flex xs12 sm8>
              <v-card flat>
-               <v-card-media src="images/logo2.jpg" height="650px">
+               <v-card-media src="images/logo5.jpg" height="650px">
                <v-container fluid grid-list-md>
-                 <v-card color="cyan darken-2" class="white--text" flat>
+                 <!--<v-card color="cyan darken-2" class="white--text" flat>
                   <v-card-title primary-title>
                      <div class="display-2">мир на ладонях</div>
                   </v-card-title>
                   <v-card-actions>
                     <v-btn flat dark><div class="">социальная сеть для путешественников</div></v-btn>
                   </v-card-actions>
-                </v-card>
+                </v-card>-->
                </v-container>
                </v-card-media>
              </v-card>
@@ -25,18 +25,16 @@
            <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
                 <v-text-field
-                  label="Имя"
-                  v-model="name"
-                  :rules="nameRules"
-                  :counter="15"
-                  required
-                ></v-text-field>
-                <v-text-field
                   label="E-mail"
                   v-model="email"
                   :rules="emailRules"
-                  required
-                ></v-text-field>
+                  required>
+                </v-text-field>
+                <v-text-field
+                  label="Пароль"
+                  v-model="password"
+                  required>
+                </v-text-field>
                 <div><a href="/password/reset">Забыли пароль?</a></div>
                 <v-btn @click="submit" class="ma-3">войти</v-btn>
                 <br>
