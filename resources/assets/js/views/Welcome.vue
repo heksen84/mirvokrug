@@ -45,6 +45,7 @@
                   counter
                   required>
                 </v-text-field>
+
                 <div><a href="/password/reset">Забыли пароль?</a></div>
                 <v-btn @click="submit" class="ma-3">войти</v-btn>
                 <br>
@@ -64,7 +65,7 @@
   export default {
     data: () => ({
       valid: false,
-      e1: false,
+      e1: true,
       e2: false,
       password: ' ',
       email: '',

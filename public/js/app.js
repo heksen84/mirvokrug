@@ -1921,12 +1921,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       valid: false,
-      e1: false,
+      e1: true,
       e2: false,
       password: ' ',
       email: '',
