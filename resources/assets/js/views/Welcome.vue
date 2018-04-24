@@ -22,7 +22,7 @@
              </v-card>
            </v-flex>
 
-           <v-flex xs8 sm4 dark color="primary" text-md-center class="pa-4">
+           <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
 
                 <!-- ПОЧТА -->

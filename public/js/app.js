@@ -33094,7 +33094,7 @@ var render = function() {
                         {
                           staticClass: "pa-4",
                           attrs: {
-                            xs8: "",
+                            xs12: "",
                             sm4: "",
                             dark: "",
                             color: "primary",
