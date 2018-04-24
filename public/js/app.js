@@ -1917,6 +1917,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1924,7 +1928,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       valid: false,
       e1: false,
       e2: false,
-      password: 'Password',
+      password: ' ',
       email: '',
       emailRules: [function (v) {
         return !!v || 'Введите e-mail';

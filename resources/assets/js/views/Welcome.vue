@@ -24,12 +24,16 @@
 
            <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
+
+                <!-- ПОЧТА -->
                 <v-text-field
                   label="E-mail"
                   v-model="email"
                   :rules="emailRules"
                   required>
                 </v-text-field>
+
+                <!-- ПАРОЛЬ -->
                 <v-text-field
                   label="Пароль"
                   hint="не менее 8 символов"
@@ -62,7 +66,7 @@
       valid: false,
       e1: false,
       e2: false,
-      password: 'Password',
+      password: ' ',
       email: '',
       emailRules: [
         v => !!v || 'Введите e-mail',
