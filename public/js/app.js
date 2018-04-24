@@ -1920,8 +1920,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1929,7 +1927,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       valid: false,
       e1: true,
       e2: false,
-      password: ' ',
+      password: '',
       email: '',
       emailRules: [function (v) {
         return !!v || 'Введите e-mail';
@@ -33096,7 +33094,7 @@ var render = function() {
                         {
                           staticClass: "pa-4",
                           attrs: {
-                            xs12: "",
+                            xs8: "",
                             sm4: "",
                             dark: "",
                             color: "primary",
@@ -33133,8 +33131,9 @@ var render = function() {
                               _vm._v(" "),
                               _c("v-text-field", {
                                 attrs: {
+                                  name: "input-10-1",
                                   label: "Пароль",
-                                  hint: "не менее 8 символов",
+                                  hint: "Не менее 8 символов",
                                   min: "8",
                                   "append-icon": _vm.e1
                                     ? "visibility"
@@ -33166,15 +33165,11 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 {
-                                  staticClass: "ma-3",
+                                  staticClass: "ma-4",
                                   on: { click: _vm.submit }
                                 },
                                 [_vm._v("войти")]
                               ),
-                              _vm._v(" "),
-                              _c("br"),
-                              _vm._v(" "),
-                              _c("br"),
                               _vm._v(" "),
                               _c(
                                 "v-btn",

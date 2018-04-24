@@ -22,7 +22,7 @@
              </v-card>
            </v-flex>
 
-           <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
+           <v-flex xs8 sm4 dark color="primary" text-md-center class="pa-4">
              <v-form v-model="valid">
 
                 <!-- ПОЧТА -->
@@ -35,22 +35,20 @@
 
                 <!-- ПАРОЛЬ -->
                 <v-text-field
-                  label="Пароль"
-                  hint="не менее 8 символов"
-                  v-model="password"
-                  min="8"
-                  :append-icon="e1 ? 'visibility' : 'visibility_off'"
-                  :append-icon-cb="() => (e1 = !e1)"
-                  :type="e1 ? 'password' : 'text'"
-                  counter
-                  required>
-                </v-text-field>
+          name="input-10-1"
+          label="Пароль"
+          hint="Не менее 8 символов"
+          v-model="password"
+          min="8"
+          :append-icon="e1 ? 'visibility' : 'visibility_off'"
+          :append-icon-cb="() => (e1 = !e1)"
+          :type="e1 ? 'password' : 'text'"
+          counter
+          required
+        ></v-text-field>
 
                 <div><a href="/password/reset">Забыли пароль?</a></div>
-                <v-btn @click="submit" class="ma-3">войти</v-btn>
-                <br>
-                <br>
-                <!--<div><a href="javascript:;" @click.stop="terms = true">Регистрация</a></div>-->
+                <v-btn @click="submit" class="ma-4">войти</v-btn>
                 <v-btn color="success" href="/register">Регистрация</v-btn>
               </v-form>
 
@@ -67,7 +65,7 @@
       valid: false,
       e1: true,
       e2: false,
-      password: ' ',
+      password: '',
       email: '',
       emailRules: [
         v => !!v || 'Введите e-mail',
