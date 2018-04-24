@@ -32,7 +32,13 @@
                 </v-text-field>
                 <v-text-field
                   label="Пароль"
-                  :type="password"
+                  hint="не менее 8 символов"
+                  v-model="password"
+                  min="8"
+                  :append-icon="e1 ? 'visibility' : 'visibility_off'"
+                  :append-icon-cb="() => (e1 = !e1)"
+                  :type="e1 ? 'password' : 'text'"
+                  counter
                   required>
                 </v-text-field>
                 <div><a href="/password/reset">Забыли пароль?</a></div>
@@ -54,11 +60,9 @@
   export default {
     data: () => ({
       valid: false,
-      password: '',
-      passwordRules: [
-        v => !!v || 'Введите имя',
-        v => v.length <= 15 || 'Name must be less than 15 characters'
-      ],
+      e1: false,
+      e2: false,
+      password: 'Password',
       email: '',
       emailRules: [
         v => !!v || 'Введите e-mail',

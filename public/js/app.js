@@ -1911,17 +1911,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       valid: false,
-      password: '',
-      passwordRules: [function (v) {
-        return !!v || 'Введите имя';
-      }, function (v) {
-        return v.length <= 15 || 'Name must be less than 15 characters';
-      }],
+      e1: false,
+      e2: false,
+      password: 'Password',
       email: '',
       emailRules: [function (v) {
         return !!v || 'Введите e-mail';
@@ -33126,8 +33129,24 @@ var render = function() {
                               _c("v-text-field", {
                                 attrs: {
                                   label: "Пароль",
-                                  type: _vm.password,
+                                  hint: "не менее 8 символов",
+                                  min: "8",
+                                  "append-icon": _vm.e1
+                                    ? "visibility"
+                                    : "visibility_off",
+                                  "append-icon-cb": function() {
+                                    return (_vm.e1 = !_vm.e1)
+                                  },
+                                  type: _vm.e1 ? "password" : "text",
+                                  counter: "",
                                   required: ""
+                                },
+                                model: {
+                                  value: _vm.password,
+                                  callback: function($$v) {
+                                    _vm.password = $$v
+                                  },
+                                  expression: "password"
                                 }
                               }),
                               _vm._v(" "),
