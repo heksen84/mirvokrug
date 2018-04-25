@@ -1724,6 +1724,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -33204,7 +33216,7 @@ var render = function() {
                         [
                           _c(
                             "v-card",
-                            { staticClass: "pa-4", attrs: { flat: "" } },
+                            { staticClass: "pa-4" },
                             [
                               _c(
                                 "v-card-text",
@@ -33257,7 +33269,22 @@ var render = function() {
                                   )
                                 ],
                                 1
-                              )
+                              ),
+                              _vm._v(" "),
+                              _c("v-text-field", {
+                                attrs: {
+                                  label: "E-mail",
+                                  rules: _vm.emailRules,
+                                  required: ""
+                                },
+                                model: {
+                                  value: _vm.email,
+                                  callback: function($$v) {
+                                    _vm.email = $$v
+                                  },
+                                  expression: "email"
+                                }
+                              })
                             ],
                             1
                           )

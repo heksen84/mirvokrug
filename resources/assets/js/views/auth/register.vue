@@ -6,7 +6,7 @@
 			 <v-container fluid fill-height>
      	 <v-layout align-center justify-center>
        <v-flex xs12 sm8 md4>
-         <v-card flat class="pa-4">
+         <v-card class="pa-4">
            <v-card-text class="px-0">
 						 <v-form v-model="valid">
 	 					 <v-text-field
@@ -15,7 +15,8 @@
 		 					:rules="nameRules"
 		 					:counter="10"
 		 					required
-	 						></v-text-field>
+	 						>
+						 </v-text-field>
 	 						<v-text-field
 						 	label="E-mail"
 		 					v-model="email"
@@ -23,8 +24,19 @@
 		 					required
 	 						></v-text-field>
  							</v-form>
-
 					 </v-card-text>
+
+				 </v-text-field>
+					<v-text-field
+					label="E-mail"
+					v-model="email"
+					:rules="emailRules"
+					required
+					></v-text-field>
+
+
+					</v-form>
+			    </v-card-text>
          </v-card>
        </v-flex>
      </v-layout>
