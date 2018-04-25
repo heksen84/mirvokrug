@@ -1688,8 +1688,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__("./node_modules/axios/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
 //
@@ -1726,34 +1724,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      valid: true,
+      valid: false,
       name: '',
       nameRules: [function (v) {
         return !!v || 'Name is required';
       }, function (v) {
-        return v && v.length <= 10 || 'Name must be less than 10 characters';
+        return v.length <= 10 || 'Name must be less than 10 characters';
       }],
       email: '',
       emailRules: [function (v) {
@@ -1761,28 +1741,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }, function (v) {
         return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         );
-      }],
-      select: null,
-      items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
-      checkbox: false
+      }]
     };
-  },
-
-  methods: {
-    submit: function submit() {
-      if (this.$refs.form.validate()) {
-        // Native form submission is not yet supported
-        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/submit', {
-          name: this.name,
-          email: this.email,
-          select: this.select,
-          checkbox: this.checkbox
-        });
-      }
-    },
-    clear: function clear() {
-      this.$refs.form.reset();
-    }
   }
 });
 
@@ -33232,7 +33192,7 @@ var render = function() {
             [
               _c(
                 "v-container",
-                { attrs: { "grid-list-md": "", fluid: "" } },
+                { attrs: { fluid: "", "grid-list-md": "" } },
                 [
                   _c(
                     "v-layout",
@@ -33240,106 +33200,64 @@ var render = function() {
                     [
                       _c(
                         "v-flex",
-                        { attrs: { xs12: "", sm12: "" } },
+                        { attrs: { xs12: "", sm4: "", "offset-sm4": "" } },
                         [
                           _c(
-                            "v-form",
-                            {
-                              ref: "form",
-                              attrs: { "lazy-validation": "" },
-                              model: {
-                                value: _vm.valid,
-                                callback: function($$v) {
-                                  _vm.valid = $$v
-                                },
-                                expression: "valid"
-                              }
-                            },
+                            "v-card",
+                            { staticClass: "pa-4", attrs: { flat: "" } },
                             [
-                              _c("v-text-field", {
-                                attrs: {
-                                  label: "Name",
-                                  rules: _vm.nameRules,
-                                  counter: 10,
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.name,
-                                  callback: function($$v) {
-                                    _vm.name = $$v
-                                  },
-                                  expression: "name"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("v-text-field", {
-                                attrs: {
-                                  label: "E-mail",
-                                  rules: _vm.emailRules,
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.email,
-                                  callback: function($$v) {
-                                    _vm.email = $$v
-                                  },
-                                  expression: "email"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("v-select", {
-                                attrs: {
-                                  label: "Item",
-                                  items: _vm.items,
-                                  rules: [
-                                    function(v) {
-                                      return !!v || "Item is required"
-                                    }
-                                  ],
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.select,
-                                  callback: function($$v) {
-                                    _vm.select = $$v
-                                  },
-                                  expression: "select"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("v-checkbox", {
-                                attrs: {
-                                  label: "Do you agree?",
-                                  rules: [
-                                    function(v) {
-                                      return (
-                                        !!v || "You must agree to continue!"
-                                      )
-                                    }
-                                  ],
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.checkbox,
-                                  callback: function($$v) {
-                                    _vm.checkbox = $$v
-                                  },
-                                  expression: "checkbox"
-                                }
-                              }),
-                              _vm._v(" "),
                               _c(
-                                "v-btn",
-                                {
-                                  attrs: { disabled: !_vm.valid },
-                                  on: { click: _vm.submit }
-                                },
-                                [_vm._v("\n      submit\n    ")]
-                              ),
-                              _vm._v(" "),
-                              _c("v-btn", { on: { click: _vm.clear } }, [
-                                _vm._v("clear")
-                              ])
+                                "v-card-text",
+                                { staticClass: "px-0" },
+                                [
+                                  _c(
+                                    "v-form",
+                                    {
+                                      model: {
+                                        value: _vm.valid,
+                                        callback: function($$v) {
+                                          _vm.valid = $$v
+                                        },
+                                        expression: "valid"
+                                      }
+                                    },
+                                    [
+                                      _c("v-text-field", {
+                                        attrs: {
+                                          label: "Name",
+                                          rules: _vm.nameRules,
+                                          counter: 10,
+                                          required: ""
+                                        },
+                                        model: {
+                                          value: _vm.name,
+                                          callback: function($$v) {
+                                            _vm.name = $$v
+                                          },
+                                          expression: "name"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("v-text-field", {
+                                        attrs: {
+                                          label: "E-mail",
+                                          rules: _vm.emailRules,
+                                          required: ""
+                                        },
+                                        model: {
+                                          value: _vm.email,
+                                          callback: function($$v) {
+                                            _vm.email = $$v
+                                          },
+                                          expression: "email"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
                             ],
                             1
                           )
