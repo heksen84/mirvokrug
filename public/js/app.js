@@ -33146,11 +33146,20 @@ var render = function() {
                               ),
                               _vm._v(" "),
                               _c(
-                                "v-btn",
-                                {
-                                  attrs: { color: "success", href: "/register" }
-                                },
-                                [_vm._v("Регистрация")]
+                                "div",
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        color: "success",
+                                        href: "/register"
+                                      }
+                                    },
+                                    [_vm._v("Регистрация")]
+                                  )
+                                ],
+                                1
                               )
                             ],
                             1

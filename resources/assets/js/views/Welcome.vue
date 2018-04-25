@@ -49,7 +49,7 @@
                 <div><a href="/password/reset">Забыли пароль?</a></div>
                 <br>
                 <v-btn @click="submit" class="ma-4">войти</v-btn>
-                <v-btn color="success" href="/register">Регистрация</v-btn>
+                <div><v-btn color="success" href="/register">Регистрация</v-btn></div>
               </v-form>
 
            </v-flex>
