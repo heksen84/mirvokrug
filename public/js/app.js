@@ -33192,15 +33192,15 @@ var render = function() {
             [
               _c(
                 "v-container",
-                { attrs: { fluid: "", "grid-list-md": "" } },
+                { attrs: { fluid: "", "fill-height": "" } },
                 [
                   _c(
                     "v-layout",
-                    { attrs: { row: "", wrap: "" } },
+                    { attrs: { "align-center": "", "justify-center": "" } },
                     [
                       _c(
                         "v-flex",
-                        { attrs: { xs12: "", sm4: "", "offset-sm4": "" } },
+                        { attrs: { xs12: "", sm8: "", md4: "" } },
                         [
                           _c(
                             "v-card",

@@ -3,9 +3,9 @@
 	<div>
 		<v-app>
 		 <v-content>
-			 <v-container fluid grid-list-md>
-     	 <v-layout row wrap>
-       <v-flex xs12 sm4 offset-sm4>
+			 <v-container fluid fill-height>
+     	 <v-layout align-center justify-center>
+       <v-flex xs12 sm8 md4>
          <v-card flat class="pa-4">
            <v-card-text class="px-0">
 						 <v-form v-model="valid">
