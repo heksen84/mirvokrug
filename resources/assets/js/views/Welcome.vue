@@ -23,6 +23,7 @@
            </v-flex>
 
            <v-flex xs12 sm4 dark color="primary" text-md-center class="pa-4">
+             <v-card class="elevation-12" flat>
              <v-form v-model="valid">
 
                 <!-- ПОЧТА -->
@@ -49,9 +50,11 @@
                 <div><a href="/password/reset">Забыли пароль?</a></div>
                 <br>
                 <v-btn @click="submit" class="ma-4">войти</v-btn>
-                <div><v-btn color="success" href="/register">Регистрация</v-btn></div>
-              </v-form>
-
+                </v-form>
+            </v-card>
+            <br>
+            <br>
+            <v-btn color="success" href="/register">Регистрация</v-btn>
            </v-flex>
          </v-layout>
        </v-container>

@@ -1892,6 +1892,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -33075,94 +33078,97 @@ var render = function() {
                         },
                         [
                           _c(
-                            "v-form",
+                            "v-card",
                             {
-                              model: {
-                                value: _vm.valid,
-                                callback: function($$v) {
-                                  _vm.valid = $$v
-                                },
-                                expression: "valid"
-                              }
+                              staticClass: "elevation-12",
+                              attrs: { flat: "" }
                             },
                             [
-                              _c("v-text-field", {
-                                attrs: {
-                                  label: "E-mail",
-                                  rules: _vm.emailRules,
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.email,
-                                  callback: function($$v) {
-                                    _vm.email = $$v
-                                  },
-                                  expression: "email"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("v-text-field", {
-                                attrs: {
-                                  name: "input-10-1",
-                                  label: "Пароль",
-                                  hint: "Не менее 8 символов",
-                                  min: "8",
-                                  "append-icon": _vm.e1
-                                    ? "visibility"
-                                    : "visibility_off",
-                                  "append-icon-cb": function() {
-                                    return (_vm.e1 = !_vm.e1)
-                                  },
-                                  type: _vm.e1 ? "password" : "text",
-                                  counter: "",
-                                  required: ""
-                                },
-                                model: {
-                                  value: _vm.password,
-                                  callback: function($$v) {
-                                    _vm.password = $$v
-                                  },
-                                  expression: "password"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("div", [
-                                _c(
-                                  "a",
-                                  { attrs: { href: "/password/reset" } },
-                                  [_vm._v("Забыли пароль?")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("br"),
-                              _vm._v(" "),
                               _c(
-                                "v-btn",
+                                "v-form",
                                 {
-                                  staticClass: "ma-4",
-                                  on: { click: _vm.submit }
+                                  model: {
+                                    value: _vm.valid,
+                                    callback: function($$v) {
+                                      _vm.valid = $$v
+                                    },
+                                    expression: "valid"
+                                  }
                                 },
-                                [_vm._v("войти")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
                                 [
+                                  _c("v-text-field", {
+                                    attrs: {
+                                      label: "E-mail",
+                                      rules: _vm.emailRules,
+                                      required: ""
+                                    },
+                                    model: {
+                                      value: _vm.email,
+                                      callback: function($$v) {
+                                        _vm.email = $$v
+                                      },
+                                      expression: "email"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("v-text-field", {
+                                    attrs: {
+                                      name: "input-10-1",
+                                      label: "Пароль",
+                                      hint: "Не менее 8 символов",
+                                      min: "8",
+                                      "append-icon": _vm.e1
+                                        ? "visibility"
+                                        : "visibility_off",
+                                      "append-icon-cb": function() {
+                                        return (_vm.e1 = !_vm.e1)
+                                      },
+                                      type: _vm.e1 ? "password" : "text",
+                                      counter: "",
+                                      required: ""
+                                    },
+                                    model: {
+                                      value: _vm.password,
+                                      callback: function($$v) {
+                                        _vm.password = $$v
+                                      },
+                                      expression: "password"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("div", [
+                                    _c(
+                                      "a",
+                                      { attrs: { href: "/password/reset" } },
+                                      [_vm._v("Забыли пароль?")]
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("br"),
+                                  _vm._v(" "),
                                   _c(
                                     "v-btn",
                                     {
-                                      attrs: {
-                                        color: "success",
-                                        href: "/register"
-                                      }
+                                      staticClass: "ma-4",
+                                      on: { click: _vm.submit }
                                     },
-                                    [_vm._v("Регистрация")]
+                                    [_vm._v("войти")]
                                   )
                                 ],
                                 1
                               )
                             ],
                             1
+                          ),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            { attrs: { color: "success", href: "/register" } },
+                            [_vm._v("Регистрация")]
                           )
                         ],
                         1
